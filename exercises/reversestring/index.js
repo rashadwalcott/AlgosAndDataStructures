@@ -8,11 +8,9 @@
 
 //Third Solution
 function reverse(str) {
-return str.split('').reduce((rev, char) => {
-  return char + rev;
-}, '');
-}
 
+return str.split('').reduce((rev, char) => char + rev,'');
+}
 
 
 module.exports = reverse;
