@@ -7,7 +7,7 @@
 //   capitalize('a lazy fox') --> 'A Lazy Fox'
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
-//Second Solution
+//Fav Solution
 function capitalize(str) {
   let result = str[0].toUpperCase();
 
