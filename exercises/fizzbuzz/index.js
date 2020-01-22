@@ -14,6 +14,7 @@
 
 //Fav Solution
 function fizzBuzz(n) {
+  
   for (let i =1;i <= n; i++){
     //Is the number multiple of 3 and 5
     if ( i % 5 === 0  && i % 3 === 0){
