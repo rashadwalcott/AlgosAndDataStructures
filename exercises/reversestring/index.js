@@ -6,24 +6,17 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-//Third Solution
+//   One solution
 function reverse(str) {
+  const arr = str.split("");
+  arr.reverse();
+  return arr.join("");
 
-return str.split('').reduce((rev, char) => char + rev,'');
+  // Cleanup Code for first solution
+  return str.split("").reverse().join("");
 }
 
-
 module.exports = reverse;
-
-// //   One solution
-// function reverse(str) {
-//   const arr = str.split('');
-//   arr.reverse();
-//   return arr.join('');
-//
-// // Cleanup Code for first solution
-// return str.split('').reverse().join('');
-// }
 
 // //Second Solution
 // function reverse(str) {
@@ -34,3 +27,9 @@ module.exports = reverse;
 // }
 // return reversed;
 // }
+
+// //Third Solution
+// function reverse(str) {
+
+//     return str.split('').reduce((rev, char) => char + rev,'');
+//     }
