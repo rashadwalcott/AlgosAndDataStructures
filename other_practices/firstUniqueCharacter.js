@@ -12,7 +12,7 @@ return 2.
 */
 
 
-//One solution
+//One solution using hashtables
 var firstUniqChar = function(s) {
     const hashTable = {}
     
@@ -29,4 +29,15 @@ var firstUniqChar = function(s) {
     return -1
 };
 
-//Second Solution
+//Second Solution using indexOf
+var firstUniqChar = function(s) {
+    for (let i = 0; i < s.length; i++){
+        const char = s[i]
+        
+        if(s.indexOf(char) === s.lastIndexOf(char)){
+            return i
+        }
+    }
+     
+     return -1
+ };
