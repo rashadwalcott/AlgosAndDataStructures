@@ -21,3 +21,9 @@ var reverseList = function(head) {
 };
 
 //Second Solution
+var reverseList = function(on, prev = null) {
+    if( on === null) return prev
+    let temp = on.next
+    on.next = prev
+    return reverseList(temp, on)
+};
