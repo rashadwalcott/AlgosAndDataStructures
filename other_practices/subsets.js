@@ -29,3 +29,14 @@ var subsets = function(nums) {
     }
     return queue
 };
+
+//Second solution
+var subsets = function(nums) {
+    const queue = [[]]
+    for(let num of nums){
+       for(let cur of [...queue]){
+           queue.push([...cur, num])
+       }
+    }
+    return queue
+};
